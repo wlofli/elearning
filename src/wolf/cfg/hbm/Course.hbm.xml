@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-2-15 20:31:44 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="wolf.cfg.hbm.Course" table="course" schema="dbo" catalog="wolf">
+        <id name="elcourseId" type="string">
+            <column name="elcourse_id" length="32" />
+            <generator class="assigned" />
+        </id>
+        <property name="elcourseName" type="string">
+            <column name="elcourse_name" length="50" />
+        </property>
+        <property name="elcourseGroup" type="string">
+            <column name="elcourse_group" length="20" />
+        </property>
+        <property name="elcourseInfo" type="string">
+            <column name="elcourse_info" length="100" />
+        </property>
+        <property name="elcourseReverse1" type="string">
+            <column name="elcourse_reverse1" length="20" />
+        </property>
+        <property name="elcourseDate" type="timestamp">
+            <column name="elcourse_date" length="23" />
+        </property>
+        <property name="elcourseTeacher" type="string">
+            <column name="elcourse_teacher" length="32" />
+        </property>
+         <property name="elcoursePurport" type="string">
+            <column name="elcourse_purport" length="1000" />
+        </property>
+    </class>
+</hibernate-mapping>

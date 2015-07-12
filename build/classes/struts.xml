@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <!DOCTYPE struts PUBLIC
+      "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+      "http://struts.apache.org/dtds/struts-2.0.dtd">           
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+	<constant name="struts.multipart.maxSize" value="10240000"></constant>
+	<package name="wolf.action" namespace="/" extends="struts-default">
+		<action name="Regedit" class="wolf.action.RegeditAction">
+			<result name="suc">/Web/suc.jsp</result>
+			<result name="fail">/Web/fail.jsp</result>
+		</action>
+			
+		<action name="Chat" class="wolf.action.ChatAction">
+			<result name="turnchatgrid">/Web/teach_chat_grid.jsp</result>
+			<result name="turnchatlist">/Web/stu_chat_list.jsp</result>
+			<result name="turnaddchat">/Web/teach_chat_add.jsp</result>
+			<result name="turnupdatechat">/Web/teach_chat_update.jsp</result>
+			<result name="turnchatdetailtch">/Web/teach_chat_detail.jsp</result>
+			<result name="turnchatdetailstu">/Web/stu_chat_detail.jsp</result>
+		</action>
+		
+		
+		
+		<action name="StuCourse" class="wolf.action.StuCourseAction">
+			<result name="turncourseinfo">/Web/stu_coursedata_info.jsp</result>
+			<result name="turnurl">/Web/stu_coursedata_url.jsp</result>
+			<result name="suc">/Web/suc.jsp</result>
+			<result name="fail">/Web/fail.jsp</result>
+		</action>
+		<action name="TeachCourse" class="wolf.action.TeachCourseAction">			
+			<result name="turncourseinfo">/Web/teach_coursedata_info.jsp</result>
+			<result name="turnaddurl">/Web/teach_coursedata_url_add.jsp</result>
+			<result name="turnupdateurl">/Web/teach_coursedata_url_update.jsp</result>
+			<result name="turnurl">/Web/teach_coursedata_url.jsp</result>
+			<result name="suc">/Web/suc.jsp</result>
+			<result name="fail">/Web/fail.jsp</result>
+		</action>		
+		<action name="Notice" class="wolf.action.NoticeAction">	
+			<result name="turncoursentc">/Web/teach_coursedata_main.jsp</result>
+			<result name="turncoursentcstu">/Web/stu_coursedata_main.jsp</result>			
+			<result name="turnaddnotice">/Web/notice_add.jsp</result>
+			<result name="turnaddcoursenotice">/Web/teach_coursedata_notice_add.jsp</result>
+			<result name="turntchcoursenoticedetail">/Web/stu_coursedata_notice_detail.jsp</result>
+			<result name="turnnoticedetail">/Web/notice_detail.jsp</result>
+			<result name="turnupdatenotice">/Web/notice_update.jsp</result>
+			<result name="turnupdatecoursenotice">/Web/teach_coursedata_notice_update.jsp</result>
+			<result name="loadallnotice">/Web/notice_list.jsp</result>
+			<result name="loadallnotice2">/Web/notice_list_sttch.jsp</result>
+			<result name="suc">/Web/suc.jsp</result>
+			<result name="fail">/Web/fail.jsp</result>
+		</action>
+		<action name="ExerciseStu" class="wolf.action.ExerciseStuAction">
+			<result name="turndownloaddata">/Web/stu_coursedata_download.jsp</result>
+			<result name="turnuploadexercise">/Web/stu_exercise_add.jsp</result>
+			<result name="turnexercise">/Web/stu_exercise_main.jsp</result>
+			<result name="grid">/Web/stu_coursedata_grid.jsp</result>
+			<result name="suc">/Web/suc.jsp</result>
+			<result name="fail">/Web/fail.jsp</result>
+		</action>
+		<action name="ExerciseDetailDownload" class="wolf.action.ExerciseDetailDownloadAction">
+			<result name="success" type="stream"> 
+   				<param name="contentType">application/octet-stream,charset=ISO8859-1</param> 
+    			<param name="contentDisposition">attachment;filename="${downloadFileName}"</param> 
+    			<param name="inputName">downloadFile</param> 
+    			<param name="bufferSize">4096</param>
+   			</result> 
+			<result name="suc">/Web/suc.jsp</result>
+			<result name="fail">/Web/fail.jsp</result>
+		</action>
+		<action name="ExerciseDownload" class="wolf.action.ExerciseDownloadAction">
+			<result name="success" type="stream"> 
+   				<param name="contentType">application/octet-stream,charset=ISO8859-1</param> 
+    			<param name="contentDisposition">attachment;filename="${downloadFileName}"</param> 
+    			<param name="inputName">downloadFile</param> 
+    			<param name="bufferSize">4096</param>
+   			</result> 
+			<result name="suc">/Web/suc.jsp</result>
+			<result name="fail">/Web/fail.jsp</result>
+		</action>
+		<action name="Exercise" class="wolf.action.ExerciseAction">
+			<result name="turnexercisedetail">/Web/teach_exercisedetail_download.jsp</result>
+			<result name="turnexercise">/Web/teach_exercise_add.jsp</result>
+			<result name="add">/Web/suc.jsp</result>
+			<result name="suc">/Web/suc.jsp</result>
+			<result name="fail">/Web/fail.jsp</result>
+			<result name="grid">/Web/teach_coursedata_grid.jsp</result>
+		</action>
+		<action name="Download" class="wolf.action.DownloadAction">
+			<result name="success" type="stream"> 
+   				<param name="contentType">application/octet-stream,charset=ISO8859-1</param> 
+    			<param name="contentDisposition">attachment;filename="${downloadFileName}"</param> 
+    			<param name="inputName">downloadFile</param> 
+    			<param name="bufferSize">4096</param>
+   			</result> 
+			<result name="suc">/Web/suc.jsp</result>
+			<result name="fail">/Web/fail.jsp</result>
+		</action>
+		<action name="Data" class="wolf.action.DataAction">
+			<result name="download">/Web/teach_coursedata_download.jsp</result> 
+			<result name="upload">/Web/teach_coursedata_add.jsp</result>	
+			<result name="grid">/Web/teach_coursedata_grid.jsp</result>
+			<result name="suc">/Web/suc.jsp</result>
+			<result name="fail">/Web/fail.jsp</result>
+		</action>
+		<action name="ElUser" class="wolf.action.ElUserAction" >
+			<result name="suc">/Web/suc.jsp</result>
+			<result name="addfail">/Web/man_user_add.jsp</result>
+			<result name="add">/Web/man_user_add.jsp</result>
+			<result name="update">/Web/man_user_update.jsp</result>
+			<result name="grid">/Web/man_user_grid.jsp</result>
+			<result name="addunselectcourse">/Web/man_user_update_course.jsp</result>
+			<result name="deleteselectedcourse">/Web/man_user_update_delcourse.jsp</result>			
+		</action>
+		<action name="Course" class="wolf.action.CourseAction" >			
+			<result name="suc">/Web/suc.jsp</result>
+			<result name="grid">/Web/man_course_grid.jsp</result>
+			<result name="update">/Web/man_course_update.jsp</result>
+			<result name="add">/Web/man_course_add.jsp</result>
+			<result name="addfail">/Web/man_course_add.jsp</result>
+			<result name="addunselecteduser">/Web/man_course_update_user.jsp</result>
+			<result name="addselecteduser">/Web/man_course_update_deluser.jsp</result>
+		</action>
+		<action name="ElUserCourse" class="wolf.action.ElUserCourseAction">
+			<result name="suc">/Web/suc.jsp</result>
+			<result name="fail">/Web/fail.jsp</result>
+		</action>
+		<action name="Login" class="wolf.action.LoginAction">
+			<result name="login_fail">/Web/login.jsp</result>
+			<result name="managemain">/Web/managemain.jsp</result>
+			<result name="studentmain">/Web/studentmain.jsp</result>
+			<result name="teachermain">/Web/teachermain.jsp</result>		
+		</action>
+	</package>
+</struts>

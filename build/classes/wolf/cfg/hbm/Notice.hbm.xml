@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-2-15 20:31:44 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+	<class name="wolf.cfg.hbm.Notice" table="notice" schema="dbo" catalog="wolf">
+        <id name="ntcId" type="string">
+            <column name="ntc_id" length="32" />
+            <generator class="assigned" />
+        </id>      
+        <property name="ntcTitle" type="string">
+            <column name="ntc_title" length="100" />
+        </property>
+        <property name="ntcContent" type="string">
+            <column name="ntc_content" length="1000" />
+        </property>
+        <property name="ntcUsername" type="string">
+            <column name="ntc_username" length="32" />
+        </property>
+        <property name="ntcCourseid" type="string">
+            <column name="ntc_courseid" length="32" />
+        </property>
+         <property name="ntcDelete" type="java.lang.Integer">
+            <column name="ntc_delete" />
+        </property>     
+        <property name="ntcIdentity" type="java.lang.Integer">
+            <column name="ntc_identity"  />
+        </property>
+        <property name="ntcDate" type="timestamp">
+            <column name="ntc_date" length="23" />
+        </property>
+       
+        
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-2-15 20:31:44 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="wolf.cfg.hbm.Data" table="data" schema="dbo" catalog="wolf">
+        <id name="eldtId" type="string">
+            <column name="eldt_id" length="32" />
+            <generator class="assigned" />
+        </id>
+        <property name="elcourseId" type="string">
+            <column name="elcourse_id" length="32" />
+        </property>
+        <property name="eldtName" type="string">
+            <column name="eldt_name" length="45" />
+        </property>
+        <property name="eldtUrl" type="string">
+            <column name="eldt_url" length="100" />
+        </property>
+        <property name="eldtUptime" type="timestamp">
+            <column name="eldt_uptime" length="23" />
+        </property>
+        <property name="eldtDowmtime" type="timestamp">
+            <column name="eldt_dowmtime" length="23" />
+        </property>
+        <property name="eldtLoader" type="string">
+            <column name="eldt_loader" length="32" />
+        </property>
+        <property name="eldtTimes" type="java.lang.Integer">
+            <column name="eldt_times" />
+        </property>
+        <property name="eldtDelete" type="java.lang.Integer">
+            <column name="eldt_delete" />
+        </property>
+    </class>
+</hibernate-mapping>

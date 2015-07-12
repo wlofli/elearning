@@ -1,0 +1,119 @@
+body{background:url("background.png");}
+#content{background:solid blue;}
+#login{width:100%;height:800px;background:url("login.jpg");}
+#login_form{position:relative;left:800px;top:400px;background:#fff;width:250px;height:120px;}
+#login9{position: relative;top: 0px;left:80px;}
+
+.h1{background:#eff;text-align:center;position:relative;top:10px;}
+.h2{background:#eff;text-align:center;position:relative;top:0px;}
+
+/*chtdetail*/
+.lou{background:#fff;position:absolute;width:100%;top:0px;border-bottom:1px solid grey;text-align:right;}
+.chdcontent{background:#fff;position:absolute;top:25px;left:20px;width:400px;}
+.chtdtl{background:#fff;position:relative;top:0px;left:350px;width:500px;height:200px;border-bottom:1px solid grey;}
+.chttime{position:absolute;right:20px;bottom:5px;}
+
+.page{position:relative;left:510px;}
+
+#chd1{position:absolute;right:20px;top:120px;}
+
+#response{background:#fee;position:relative;left:350px;width:500px;height:200px;}
+/*cht add css*/
+
+#elform_cht{background:#fee;position:relative;left:400px;width:400px;height:200px;}
+#chtName{position: relative;top: 0px;left:23px;}
+#chtRevers1{position: relative;top: 0px;left:25px;}
+#cht9{position: relative;top: 0px;left:150px;}
+
+
+
+#stu_urllist{position:relative;left:300px;top:0px;width:600px;height:800px;background:#fff;}
+#stu_ntc_detail{position:relative;left:300px;top:0px;width:600px;height:400px;background:#fff;}
+.stu_exercise{position:relatice;top:10px;width:100%;height:100px;background:#fff;}
+#stu_exerciseform{position:relative;left:300px;top:0px;width:600px;height:200px;background:#fff;}
+#s8{position: absolute;bottom:0px;right: 0px;}
+
+#dataerror{position:absolute;right:10px;}
+#dataupload span{position:absolute; left:0px;}
+#dataupload{background:#eff;text-align:right;position:relative;top:80px;}
+#file{background:#eff;position:absolute;right:50px;}
+/*teach_url_form*/
+#addurl{position: relative;top: 0px;left: 1050px;}
+#urlform{background:#fee;position:relative;left:300px;width:600px;height:200px;}
+#u1{position: relative;top: 0px;left: 0px;}
+#u2{position: relative;top: 0px;left: 0px;}
+
+
+/*tch_coursedatamain*/
+#addntc{position: relative;top: 0px;left: 1050px;}
+#tch_urllist{position:relative;left:300px;top:0px;width:600px;height:800px;background:#fff;}
+#tch_courseinfo{font-size:34px;position:relative;left:300px;top:00px;width:600px;height:400px;background:#fff;}
+
+
+
+/*teach_coursedata grid*/
+#tchgrid{position:relative;left:300px;top:0px;width:600px;height:800px;background:#fff;	}
+#tchgrid ul{list-style-type: none;margin: 0px;padding: 0px;}
+#tchgrid li{width: 100%;}
+#tchgrid li a{color: #777777;display: block;padding: 6px 0px 4px 15px;}
+#tchgrid li span{float: right;/*使span元素浮动到右面*/text-align: right;/*日期右对齐*/}
+#tchgrid li a:hover{color: #336699;}
+
+#select{position:relative;top:0px;width:100%;background:#fff;height:20px;}
+#select ul{list-style:none;}
+#select ul li{float:left;width:16%;text-align:center;}
+/*ntclist css*/
+#ntc{position:relative;left:300px;top:0px;width:600px;height:800px;background:#fff;}
+.elntc{margin: 0px 10px 20px;text-align: left;}
+.elntc ul{list-style-type: none;margin: 0px;padding: 0px;}
+.elntc li{width: 100%;}
+.elntc li a{color: #777777;display: block;padding: 6px 0px 4px 15px;}
+.elntc li span{float: right;/*使span元素浮动到右面*/text-align: right;/*日期右对齐*/}
+.elntc li a:hover{color: #336699;}
+
+/*ntc add css*/
+#elform_ntc{background:#fee;position:relative;left:200px;width:800px;height:500px;	}
+.ntctitle{position: relative;top: 0px;left:23px;}
+.ntccontent{position: relative;top: 0px;left:25px;}
+.ntcusername{position: relative;top: 0px;left:230px;}
+.ntcdate{position: relative;top: 0px;left:230px;}
+/*ntcdetail css*/
+
+#ntc_detail{position:absolute;left:300px;top:0px;width:600px;height:70%;background:#fff;}
+#ntc_date{position: absolute;bottom: 40px;right: 20px;}
+#ntc_date_back{position: absolute;bottom: 0px;right: 20px;}
+#ntc_username{position:absolute;bottom:60px;right:20px;}
+/*man_user*/
+/*p4  usercourse按钮css*/
+#p4{position: relative;bottom: 5px;left: 980px;}
+/*man_user_form*/
+#elform_user{background:#fee;position:relative;left:300px;width:600px;height:220px;}
+#p0{font-size: 15px;background-color: lightblue;text-align: center;width: 300%;}
+#p1{position: relative;top: 0px;left: 0px;}
+#p2{position: relative;top: -25px;left: 350px;}
+#p3{position: relative;top: -25px;left: 0px;}
+#p5{position: relative;top: -50px;left: 350px;}
+#p6{position: relative;top: -50px;left: 0px;}
+#p7{position: relative;top: -75px;left: 350px;}
+/* p8 userform按钮 css*/
+#p8{position: absolute;bottom: 5px;right: 20px;}
+#p9{position: relative;top: 0px;left:230px;}
+
+/*man_course_form*/
+#elform_course{background:#fee;position:relative;left:300px;width:600px;height:480px;}
+#c1{position: relative;top: 0px;left: 0px;}
+#c2{position: relative;top: -25px;left: 350px;}
+#c3{position: relative;top: -25px;left: 0px;}
+#c4{position: relative;top: 0px;left: 0px;}
+#c5{position: relative;top: 0px;left: 0px;}
+/*man position*/
+.position{position:absolute;left:0px;top:0px;background:#ffe}
+/*logo css*/
+#logo{broder:1px solid red;width:100% ;height:100px;background:url("wolf.jpg");background-repeat: no-repeat;padding:80px 0px;}
+#logoch{text-align: right;font color:#F00;}
+
+/*table css none-use*/
+table.tb{border-left:1px solid #000;border-bottom:1px solid #000;	}
+table.tb td{border-right: 1px solid #000;border-top: 1px solid #000;height:30px;text-align:center;}
+table.tb thead{background: #711;color:#fff;	}
+

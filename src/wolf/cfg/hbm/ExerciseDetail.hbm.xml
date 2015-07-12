@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-2-15 20:31:44 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="wolf.cfg.hbm.ExerciseDetail" table="exercise_detail" schema="dbo" catalog="wolf">
+        <id name="elexdId" type="string">
+            <column name="elexd_id" length="32" />
+            <generator class="assigned" />
+        </id>
+        <property name="elexId" type="string">
+            <column name="elex_id" length="32" />
+        </property>
+        <property name="elexdUsername" type="string">
+            <column name="elexd_username" length="32" />
+        </property>
+        <property name="elexdName" type="string">
+            <column name="elexd_name" length="50" />
+        </property>
+        <property name="elexdGrade" type="java.lang.Integer">
+            <column name="elexd_grade" />
+        </property>
+         <property name="elexdDelete" type="java.lang.Integer">
+            <column name="elexd_delete" />
+        </property>
+        <property name="elexdUrl" type="string">
+            <column name="elexd_url" length="100" />
+        </property>
+        <property name="elexdContent" type="string">
+            <column name="elexd_content" length="150" />
+        </property>
+        <property name="elexdDate" type="timestamp">
+            <column name="elexd_date" length="23" />
+        </property>
+        <property name="eluserId" type="string">
+            <column name="eluser_id" length="32" />
+        </property>
+    </class>
+</hibernate-mapping>

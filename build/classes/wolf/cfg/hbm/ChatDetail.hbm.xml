@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-2-15 20:31:44 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="wolf.cfg.hbm.ChatDetail" table="chat_detail" schema="dbo" catalog="wolf">
+        <id name="elchdId" type="string">
+            <column name="elchd_id" length="32" />
+            <generator class="assigned" />
+        </id>
+        <property name="elchId" type="string">
+            <column name="elch_id" length="32" />
+        </property>
+        <property name="elchdName" type="string">
+            <column name="elchd_name" length="32" />
+        </property>
+        <property name="elchdContent" type="string">
+            <column name="elchd_content" length="1000" />
+        </property>
+        <property name="elchdReverse1" type="java.lang.Integer">
+            <column name="elchd_reverse1"  />
+        </property>
+        <property name="elchdDate" type="timestamp">
+            <column name="elchd_date" length="23" />
+        </property>
+    </class>
+</hibernate-mapping>

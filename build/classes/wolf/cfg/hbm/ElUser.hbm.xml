@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-2-15 20:31:44 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="wolf.cfg.hbm.ElUser" table="el_user" schema="dbo" catalog="wolf">
+        <id name="eluserId" type="string">
+            <column name="eluser_id" length="32" />
+            <generator class="assigned" />
+        </id>
+        <property name="eluserLoginname" type="string">
+            <column name="eluser_loginname" length="20" />
+        </property>
+        <property name="eluserPassword" type="string">
+            <column name="eluser_password" length="20" />
+        </property>
+        <property name="eluserIslock" type="java.lang.Integer">
+            <column name="eluser_islock" />
+        </property>
+        <property name="eluserClass" type="string">
+            <column name="eluser_class" length="32" />
+        </property>
+        <property name="eluserIdentity" type="java.lang.Integer">
+            <column name="eluser_identity" />
+        </property>
+        <property name="eluserReverse1" type="string">
+            <column name="eluser_reverse1" length="20" />
+        </property>
+        <property name="eluserReverse2" type="string">
+            <column name="eluser_reverse2" length="20" />
+        </property>
+        <property name="eluserName" type="string">
+            <column name="eluser_name" length="20" />
+        </property>
+        <property name="eluserPhone" type="string">
+            <column name="eluser_phone" length="24" />
+        </property>
+        <property name="eluserEmail" type="string">
+            <column name="eluser_email" length="32" />
+        </property>
+        <property name="eluserDate" type="timestamp">
+            <column name="eluser_date" length="23" />
+        </property>
+    </class>
+</hibernate-mapping>

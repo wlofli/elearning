@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2014-2-15 20:31:44 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="wolf.cfg.hbm.Chat" table="chat" schema="dbo" catalog="wolf">
+        <id name="elchId" type="string">
+            <column name="elch_id" length="32" />
+            <generator class="assigned" />
+        </id>
+        <property name="elcourseId" type="string">
+            <column name="elcourse_id" length="32" />
+        </property>
+        <property name="elchName" type="string">
+            <column name="elch_name" length="40" />
+        </property>
+        <property name="elchUrl" type="string">
+            <column name="elch_url" length="100" />
+        </property>
+        <property name="elchTime" type="timestamp">
+            <column name="elch_time" length="23" />
+        </property>
+        <property name="elchReverse1" type="string">
+            <column name="elch_reverse1" length="20" />
+        </property>
+        <property name="elchReverse2" type="string">
+            <column name="elch_reverse2" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>
