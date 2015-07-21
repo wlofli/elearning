@@ -1,0 +1,4 @@
+test1:
+commit with wolf-lzc
+exceptresult:false
+trueresult:
