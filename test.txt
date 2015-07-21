@@ -1,4 +1,11 @@
 test1:
 commit with wolf-lzc
 exceptresult:false
-trueresult:
+trueresult:false
+
+
+test2:
+commit with wolf-lzc
+but confitggit with wolf-li's Email(378476772@qq.com)
+except result:false
+real result :
